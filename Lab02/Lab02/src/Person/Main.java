@@ -49,11 +49,11 @@ public class Main
     ja.addGrade(3);
     ja.addGrade(2);
     ja.getGradesAverage();
-    zut.addFaculty("Analiza Matematyczna i Algebra Liniowa I");
-    zut.addFaculty("Technologie Programowania Systemów Internetowych");
+    Faculty f1 = new Faculty("Analiza Matematyczna i Algebra Liniowa I","amial2@zut.edu.pl");
+    zut.addFaculty(f1);
+    Faculty f2 = new Faculty("Technologie Programowania Systemów Internetowych","TPSI@zut.edu.pl");
+    zut.addFaculty(f2);
     zut.getFaculties();
-
-        
     
     }
 }

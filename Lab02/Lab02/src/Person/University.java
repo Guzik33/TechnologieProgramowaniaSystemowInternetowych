@@ -16,7 +16,7 @@ public class University implements EmailRecipient
 {
     private String emailAddress;
     private String name;
-    public List<String> faculties = new ArrayList<>();
+    public List<Faculty> faculties = new ArrayList<>();
     
     public University(String name, String emailAddress)
     {
@@ -33,15 +33,15 @@ public class University implements EmailRecipient
     }
     
     
-    public List<String> getFaculties()
+    public List<Faculty> getFaculties()
     {
-        for(String faculty : faculties)
+        for(Faculty faculty : faculties)
         {
             System.out.println(faculty);
         }
         return faculties;
     }
-    public void addFaculty(String faculty)
+    public void addFaculty(Faculty faculty)
     {
         faculties.add(faculty);
     }
